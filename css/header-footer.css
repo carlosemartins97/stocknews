@@ -1,0 +1,227 @@
+@charset "utf-8"; 
+
+/* **********************************************************************************
+Fatec Rubens lara - programação sitios internet - P2 - professor alexandre Garcia
+alunos:  Carlos Eduardo Martins, Cyro Fernandes, Henrique Marchioni    - 3 ciclo - SI
+**************************************************************************************
+*/
+
+
+
+/* == Header com o Menu == */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 100%;
+    margin: 0 auto;
+    background-color: black;
+    height: 8em;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    position: relative;
+  }
+  
+
+  
+  .nav-list li ul li {
+    margin: 3em 0;
+    width: 14em;
+  }
+  
+  .nav-list li:hover ul, .nav-list li.over ul {
+    display: block;
+  }
+  
+  li a {
+    color: #ff00ff;
+    font-weight: bold;
+  }
+  
+  li a {
+    text-decoration: none;
+    padding: 1.5em;
+  }
+  
+  li a:hover {
+    background: #eee;
+    border-radius: 10px;
+  }
+  
+  .header-logo {
+    width: 15em;
+  }
+
+
+
+  /* == FOOTER == */
+
+footer{
+    flex:1 1 100%;
+    background-color: rgba(2, 16, 46, 0.918);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.footer-logo {
+  min-width: 10%;
+  max-width: 10%;
+  flex: 1;
+}
+
+.img-footer {
+  width: 100%;
+}
+
+.cliente-footer {
+  width: 50%;
+  border-radius: 20%;
+}
+
+.div-footer {
+  max-width: 20%;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.face, .whatsapp, .insta {
+  max-width: 70%;
+}
+
+.div-social, .p-footer, .cliente-footer {
+  flex:1;
+}
+
+.div-social {
+  max-width: 70%;
+  display: flex;
+}
+
+.p-footer {
+  margin-top: -1em;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+/* Menu Resposividade */
+
+.menu_lateral  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 25%;
+  top: 0;
+  left: -3px;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-right: 3px solid #242525;
+  border-bottom: 3px solid #242525;
+}
+
+.menu_lateral a , dt {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgb(172, 24, 135);
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid #444;
+}
+
+.botoes {
+  width: 80%;
+  margin-left: 0.2em;
+}
+
+#botao-fechar {
+  border-bottom: none;
+}
+
+.menu_lateral a:hover {
+  color: #f1f1f1;
+}
+
+
+.menu_lateral .botao_fechar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+
+
+.botao_abrir {
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: black;
+  color: rgb(168, 20, 131);
+  padding: 10px 15px;
+  border: none;
+  display: none;
+  width: 50%;
+  transition: 0.3s;
+}
+
+.botao_abrir:hover {
+  background-color:#f1f1f1;
+}
+
+/* ---------parte menu -------------------------*/
+
+@media screen and  (max-width: 800px) {     /* transformação menu  footer  abaixo de 800px */ 
+
+
+
+  .nav-menu  .nav-list{
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+   
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer-logo {
+    max-width: 50%;
+  }
+
+  .div-footer{
+    max-width: 70%;
+    padding-top: 1em;
+  }
+
+  .botao_abrir{
+    display: block;
+  }
+
+  .header-logo {
+    width: 45%;
+    float: right;
+    margin-right: 2em;
+    }
+
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!--
+/* **********************************************************************************
+Fatec Rubens lara - programação sitios internet - P2 - professor alexandre Garcia
+alunos:  Carlos Eduardo Martins, Cyro Fernandes, Henrique Marchioni    - 3 ciclo - SI
+**************************************************************************************
+*/-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock news</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+
+    <script src="js/main.js"> 
+   
+    
+    </script>
+
+
+    <script>
+        window.onload = ()=> {scrapping_altas_baixas(); scrapping_indices();}
+
+        function abir_Nav() {
+          document.getElementById("menu_lateral").style.width = "200px";
+        }
+        
+        function fechar_nav() {
+          document.getElementById("menu_lateral").style.width = "0";
+        }
+      </script>
+   
+   
+   
+    </head>
+  
+    <body>
+  
+      <header>
+          
+        
+        
+        <div id="menu_lateral" class="menu_lateral">
+          <div class="botoes">
+          <a href="javascript:void(0)" id="botao-fechar" class="botao_fechar" onclick="fechar_nav()">×</a>
+          <a href="index.html">Noticias</a>
+          <a href="mercado.html">Mercado</a>
+        </div>  
+        </div>
+  
+          <button class="botao_abrir" onclick="abir_Nav()">☰ Menu</button> 
+        
+        
+        
+        
+        <img class="header-logo" src="imagens/Logo.png" alt="logo Stock news">
+          
+          <nav class="nav-menu">
+              <ul class="nav-list">
+                <li class=""><a href="index.html">Noticias</a></li>
+                <li class=""><a href="mercado.html">Mercado</a></li>
+              </ul>
+            </nav>
+  
+  
+          
+  
+      </header>
+
+      <section class="banner">
+        <h1>Stock news<br>
+            As Noticias mais recentes que irão movimentar o mercado
+        </h1>
+          <p class="p-banner">
+          
+            Acompanhe aqui as Principais Noticias do dia<br>
+          </p>
+          <p>
+            <a class="botao" href="index.html">Saiba mais</a>
+          </p>  
+      </section>
+
+
+
+
+<main>
+    <h2 class="post">
+        Acompanhe o Mercado
+    </h2>
+
+    <div class="invest" name="invest">
+
+      <div class="ibov-principal">
+        <h3 class="h3"> Ações <span class="h3-span">BOVESPA e BM&F</span></h3>
+        <div class="ibov-sec"> <span id="pts-a">IBOVESPA </span> 
+          <div class="pts">106.005,5<span id="pts-i"> pts</span></div>
+        </div>
+      </div>
+
+      <div class="acoes" name="acoes">
+        <div class="altas" name="altas">
+          <h3 class="altas">Altas</h3>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+        </div>
+          
+        <div class="baixas" name="baixas">
+          <h3 class="baixas">Baixas</h3>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">PETR4 PETROLEO BRASILEIRO S.A. PETROBRAS</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="fii-principal">
+        <h3 class="h3"> Fii <span class="h3-span">FUNDOS DE INVESTIMENTO IMOBILIÁRIO</span></h3>
+      </div>
+
+      <div class="acoes" name="acoes">
+        <div class="altas" name="altas">
+          <h3 class="altas">Altas</h3>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+        </div>
+          
+        <div class="baixas" name="baixas">
+          <h3 class="baixas">Baixas</h3>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+          <div class="c1" nome="c1">
+            <img class="imagem" name="imagem" src="imagens/teste.png" alt="imagem">
+            <div class="nome-porcent">
+              <span class="nome" name="nome">BFS3</span>
+              <span class="preco" name="preco">R$ 10,90</span>
+            </div>
+            <span class="porcent" name="porcent">5,27%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="indices-mundiais">
+        <h3> Principais Índices Mundiais </h3>
+   
+       <table>
+        <thead>
+          <tr>
+            <th> Indice</th>
+            <th> Último</th>
+            <th> Variação</th>
+          </tr>
+         </thead>
+   
+         <tbody>
+           <tr class="nome-indice">     <td  name="nome-indice"><img src="imagens/eua.png" alt="bandeira do EUA" class="img-indice">              S&P 500  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">   <td  name="nome-indice"><img src="imagens/eua.png" alt="bandeira do EUA" class="img-indice">              Dow Jones  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">    <td  name="nome-indice"><img src="imagens/eua.png" alt="bandeira do EUA" class="img-indice">              Nasdag  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">   <td  name="nome-indice"> <img src="imagens/eua.png" alt="bandeira do EUA" class="img-indice">             S&P 500 vix  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">    <td  name="nome-indice">  <img src="imagens/brasil.png" alt="bandeira do brasil" class="img-indice">      Ibovespa  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">   <td  name="nome-indice"><img src="imagens/alemanha.png" alt="bandeira da alemanha" class="img-indice">    Dax  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">    <td  name="nome-indice"><img src="imagens/euro.png" alt="bandeira da uniao europeia" class="img-indice">  EURO estoxx 50  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">   <td  name="nome-indice"><img src="imagens/japao.png" alt="bandeira do japÃ£o" class="img-indice">         Nikkey  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+           <tr class="nome-indice">   <td  name="nome-indice"> <img src="imagens/china.png" alt="bandeira da china" class="img-indice">         Shanghai  </td> <td name="pontos_indice"> 25.0002,2 </td>  <td name="varia_indice"> +2,5% </td> </tr>
+         </tbody>
+   
+       </table>
+     </div>
+
+    </div>
+
+
+
+
+
+
+</main>
+
+
+
+
+<footer>
+
+      <div class="footer-logo">
+        <img class="img-footer" src="imagens/logo_footer.png" alt="imagem de um porquinho simbolizando um cofrinho">
+      </div>
+     
+      <div class="div-footer">
+
+        <img class="cliente-footer" src="imagens/Logo_footer2.png" alt="logo da Stock news"> 
+        
+        <p class="p-footer">
+            
+            Nos acompanhe<br>
+            nas redes socias
+        </p>
+
+        <div class="div-social">
+           <a href="https://www.facebook.com/"> <img class="face" src="imagens/Face.png" alt="link para o Facebook da pagina stock news"></a>
+           <a href="https://www.instagram.com/"> <img class="insta" src="imagens/Insta.png" alt="link para a página no Instagram da pagina stock news"></a>
+           <a href="http://api.whatsapp.com/send?1=pt_BR&phone=55"> <img class="whatsapp" src="imagens/Whats.png" alt="link para o whatsapp de stock news"></a>
+          <!-- Utilizamos endereços padrões porque nao existe a pagina -->
+          </div>
+
+      </div>
+
+
+    </footer>
+  </body>
+</html>
